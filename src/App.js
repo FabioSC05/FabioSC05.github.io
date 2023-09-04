@@ -19,7 +19,7 @@ class App extends React.Component {
         <nav>
           <ul>
             <li>
-              <Link to="/">Sobre mim</Link>
+              <Link to="/WebSite">Sobre mim</Link>
             </li>
             <li>
               <Link to="/projects">Projetos</Link>
@@ -36,7 +36,7 @@ class App extends React.Component {
   renderRoutes() {
     return (
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/WebSite">
           <AboutMe />
         </Route>
 
@@ -58,6 +58,7 @@ class App extends React.Component {
   }
 
   render() {
+    document.title = 'Fábio Carvalho';
     return (
       <div>
         {this.renderNavBar()}
